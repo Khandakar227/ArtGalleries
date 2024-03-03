@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { } from 'react'
 import Navbar from './Navbar'
 import IntroVideo from './IntroVideo'
+import SignUpForm from './SignUpForm';
 
 function HeroSection() {
   return (
@@ -19,7 +20,7 @@ function HeroSection() {
       <section className='mx-auto max-w-5xl py-12 px-4 grid md:grid-cols-2 gap-4 justify-between items-center'>
         <div>
           <h3 className='text-4xl font-bold font-charmonan pb-12'>Exclusive Offer</h3>
-          <p className='text-lg'>Unlock Unlimited Access for Only <span className='relative'><del className='pr-2'>$1000/Month</del><b className='absolute md:top-[-100%] md:left-0'>$250/Month</b></span></p>
+          <p className='text-lg'>Unlock Unlimited Access for Only <span className='lg:relative'><del className='pr-2'>$1000/Month</del><b className='lg:absolute md:top-[-100%] md:left-0'>$250/Month</b></span></p>
         </div>
         <div className='flex justify-end items-center'>
           <img className='w-full shadow rounded' src="./subscription.jpg" alt="Subsciption" />
@@ -29,13 +30,7 @@ function HeroSection() {
       <section className="my-12 sign-up-bg">
         <div className='mx-auto max-w-5xl py-6 px-4 grid md:grid-cols-2 gap-4 justify-between items-center'>
           <div></div>
-          <form className='px-4 py-10 shadow-sm glass'>
-            <h3 className='font-charmonan pb-6 text-center text-2xl font-bold'>SIGN UP</h3>
-            <input type="text" name='name' placeholder='Name' className='mb-4 w-full px-4 py-2 shadow-sm' />
-            <input type="email" name='email' placeholder='Email' className='mb-4 w-full px-4 py-2 shadow-sm' />
-            <input type="text" name='bname' placeholder='Business Name' className='mb-4 w-full px-4 py-2 shadow-sm' />
-            <button className='font-semibold px-4 py-2 bg-white rounded shadow'>SUBMIT</button>
-          </form>
+          <SignUpForm/>
         </div>
       </section>
     </div>
