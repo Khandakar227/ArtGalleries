@@ -1,6 +1,6 @@
 import sqlite3
 
-DATABASE = 'database/artgallaries.db'
+DATABASE = 'database/artgalleries.db'
 
 def init_db():
     con = sqlite3.connect(DATABASE)
